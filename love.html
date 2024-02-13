@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Valentine's Day Card</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      text-decoration-color: #3f0106;
+    }
+    #card-container {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 60%;
+      transform: translate(-50%, -50%);
+      background-color: #ffb2b8;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+      z-index: 9999;
+      text-align: left; 
+    }
+    #close-btn {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+<img src="cute.png" alt="cute" style="width: 200px; height: auto;">
+  <h1>Happy Valentine's Day!</h1>
+  <button id="show-card-btn">Click ME</button>
+  <div id="card-container">
+    <span id="close-btn">&times;</span>
+    <img src="flower.png" alt="Flowers" style="width: 100px; height: auto;">
+    <h2>hi bff</h2>
+    <p>dahil cute ka ito para sayo</p>
+    <p>thank you pi sa unexpected friendship</p>
+    <p>super dami niyo ng natulong hindi lang about sa acad,</p>
+    <p>life drama rin huhu</p>
+    <p>forever na kayo nakakeep sa heart ko</p>
+    <p>love,</p>
+    <p>ashqty hehe</p>
+
+  </div>
+
+  <script>
+    const showCardButton = document.getElementById('show-card-btn');
+    const cardContainer = document.getElementById('card-container');
+    const closeButton = document.getElementById('close-btn');
+
+    showCardButton.addEventListener('click', () => {
+      cardContainer.style.display = 'block';
+    });
+
+    closeButton.addEventListener('click', () => {
+      cardContainer.style.display = 'none';
+    });
+  </script>
+</body>
+</html>
